@@ -1,0 +1,208 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+/*Caixa de tota la pàgina web*/
+
+.container{
+    width: 100%;
+    background-color:darkred;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+/*Caixa del menú*/
+
+/*Menú navegació*/
+
+.menu{
+    margin:auto;
+    width: 100%;
+    background-color:greenyellow;
+    display:flex;
+    flex-wrap:wrap;
+}
+.nav{
+    display:flex;
+    flex-grow:1;
+    min-width: 400px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    background-color: blue;
+    color:white;
+    border: 1.5px solid white;
+}
+
+
+/*Caixa pare del cos de la pàgina*/
+
+.cos{
+    /*flex:auto;*/
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-top: 10px;
+   /* background-color: yellow;*/
+
+}
+
+/*Caixa pare Articles*/
+
+.articles{
+    flex:80%;
+    min-width: 300px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*margin-top: 30px;*/
+}
+
+/*Caixa pare de l'Aside*/
+
+aside{
+  /* width: 35%;*/
+    flex:20%;
+    min-width: 100px;
+   /* background-color: blueviolet;*/
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+/*Dins caixa Articles*/
+
+/* articleA i articleB*/
+
+
+.articleA, .articleB{
+    flex:auto;
+    display:flex;
+    /*flex-wrap: wrap;*/
+    justify-content:space-around;
+    margin:2%;
+    border: 20px solid black;
+    border-radius: 25px 5px 40px 15px;
+}
+
+.articleA{
+   /*background-color: red;*/
+    width: 95%;
+}
+
+.articleA1{
+    flex:auto;
+    width: 90%;/*1400px;*/
+    background-color: chocolate;
+    display:flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    border-radius: 5px 0px 20px 0px;
+}
+.articleA1 p{
+    margin: 10px;
+    width: 60%;
+    color: blue;
+    font-size: 1.5em;
+    /*background-color: aqua;*/
+    align-self: center;
+    justify-content:space-between;
+}
+/*
+.articleA1 img{
+    justify-content: center;
+    align-self: center;
+}
+*/
+/*efectes sobre les imatges*/
+
+.articleA1 img, .articleB1 img, .articleB2 img{
+    margin: 10px;
+    border: 15px solid blue;
+    border-radius: 25px 5px 40px 15px;
+    min-height: 20%;
+    min-width: 20%;
+    justify-content: center;
+    align-self: center;
+}
+
+/* article B */
+
+.articleB{
+    background-color: black;
+    flex-direction:row;
+}
+
+
+
+/* articleB1 i articleB2 */
+
+
+.articleB1{
+    background-color: coral;
+    color:aqua;
+    border-radius: 25px 5px 40px 15px;
+}
+.articleB1, .articleB2{
+    flex:auto;
+    width: 60%; /*700px;*/
+    min-width: 45%;
+    display:flex;
+    flex-flow: wrap;
+    margin:2%;
+}
+.articleB1 p{
+    margin: 10px;
+    color:aqua;
+    font-size: 1.5em;
+    order:2
+    }
+
+.articleB2{
+    background-color:wheat;
+    border-radius: 15px 40px 5px 25px;
+}
+.articleB2 p{
+    margin: 10px;
+    color:crimson;
+    font-size: 1.5em;
+}
+
+
+/*Dins caixa aside*/
+
+.artAside{
+    flex: 25%;
+    /*width:300px;*/
+    min-width: 45%;
+    /*height: 250px;*/
+   /* background-color: crimson;*/
+    margin:8%;
+    padding:5%;
+}
+
+
+/* Caixa footer */
+.footer{
+    width: 100%;
+    background-color:black;
+    color:white;
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+}
+
+/*Dins caixa del footer */
+.poble{
+    background-color: red;
+}
